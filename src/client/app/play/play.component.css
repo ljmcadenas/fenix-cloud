@@ -1,0 +1,22 @@
+.letters-ok > div {
+    border-bottom: 1px solid #000;
+    padding: 0;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.letters-error {
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.row.status {
+    margin-top: 20px; 
+}
+
+.row.status > div {
+    margin-bottom: 10px;
+}

@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node ./src/server/index.js",
     "build": "ng build",
     "test": "echo \"Error: no test... minimal project\" && exit 1",
     "lint": "echo \"Error: no lint... minimal project\" && exit 1",
@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "body-parser": "^1.17.2",
+    "bootstrap": "^4.0.0-alpha.6",
     "core-js": "^2.4.1",
     "express": "^4.15.3",
     "mongoose": "^4.11.5",

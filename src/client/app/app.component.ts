@@ -3,13 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <h1>
-      Welcome to {{title}}!!
-    </h1>
-    <router-outlet></router-outlet>
+    <div class="container">
+      <h1 class="text-center">::Hangman::</h1>
+      <router-outlet></router-outlet>
+    </div>
   `,
-  styles: []
+  styles: [`
+    .container {
+      margin-top: 20px;
+      padding-bottom: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      background-color: #FED13A
+    }
+  `]
 })
-export class AppComponent {
-  title = 'app';
-}
+export class AppComponent { }

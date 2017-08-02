@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col">
+        <div class="form-group">
+            <label for="category">Categoría</label>
+            <select class="form-control" id="category" [ngModel]="selectedCategory" (ngModelChange)="selectCategory($event)" #select>
+                <option value="0" disabled selected>Seleccione una categoría</option>
+                <option *ngFor="let cat of categories" [ngValue]="cat">{{ cat.name }}</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row letters-ok">
+    <div class="col" *ngFor="let l of letters">
+        <span [ngClass]="{'invisible': !l.visible}" [innerHtml]="l.letter"></span>
+    </div>
+</div>
+<div class="row status" [hidden]="!isPlaying">
+    <div class="col-sm-12 col-md-6">
+        <span class="letters-error" *ngFor="let letter of lettersError" [innerHtml]="letter"></span>
+    </div>
+    <div class="col-sm-12 col-md-6">
+        <hangman [remainingLives]="lives"></hangman>
+    </div>
+</div>
