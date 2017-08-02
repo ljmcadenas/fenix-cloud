@@ -11,3 +11,4 @@ Leonardo Cadenas
 - `cd fenix-cloud`
 - `npm install`
 - `npm start`
+- Abrir [http://localhost:3000](http://localhost:3000)
